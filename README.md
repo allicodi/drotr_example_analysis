@@ -79,5 +79,29 @@ vi sub_jobs.sh
 
 ## Running the analysis
 
-TODO 
-1. ./run_simulation.sh arg1 arg2 arg3
+1. Navigate to repository with data analysis code and submit a job using `sub_jobs.sh`
+
+```bash
+
+cd ~/drotr_example_analysis
+
+# Argument 1: Partition 
+# Argument 2: Number of seeds
+# Argument 3: Fit nuisance models (TRUE) or load existing nuisance models (FALSE)
+
+# Example running on empire partition for 3 seeds and fitting nuisance models
+./sub_jobs.sh empire 3 TRUE
+
+```
+
+You can check on the progress of your jobs using `squeue -u <user_id>`. You will see something similar to this:
+
+```bash
+[acodi@node23 drotr_example_analysis]$ squeue -u acodi
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        28705647_1    empire    drotr    acodi  R       0:02      1 node52
+        28705647_2    empire    drotr    acodi  R       0:02      1 node52
+        28705647_3    empire    drotr    acodi  R       0:02      1 node52
+```
+
+2. When your job finishes running, results will be saved in the `results` folder you made within the project space. You can transfer them to your local machine using SCP/SFTP, or begin an interactive R session to view them interactively.

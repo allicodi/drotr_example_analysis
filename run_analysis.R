@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------------
 
 # Directory for personal R package library
-.libPaths("~/Rlibs_test")
+.libPaths("~/Rlibs")
 
 here::i_am("run_analysis.R")
 
