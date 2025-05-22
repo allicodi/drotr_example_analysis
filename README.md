@@ -5,7 +5,7 @@ This is an example of how to use RSPH HPC for basic data analysis. Requires work
 
 ### Initial setup
 
-Follow these steps to get your environment set up on RSPH HPC
+Follow these steps to set up your environment on RSPH HPC
 
 1. **Log into RSPH HPC**
 
