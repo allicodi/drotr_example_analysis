@@ -2,6 +2,9 @@
 # Example script to run analysis across seeds for single rule
 # -------------------------------------------------------------------------------
 
+# Directory for personal R package library
+.libPaths("~/Rlibs_test")
+
 here::i_am("run_analysis.R")
 
 # make sure you have pre-installed drotr package from github

@@ -22,8 +22,8 @@ git clone git@github.com:allicodi/drotr_example_analysis
 ```bash
 
 # PREREQ: If you don't already have a folder for your projects within the project space, create this first
-cd /projects/dbenkes
-mkdir <your_name>
+cd /projects/entericsepi
+mkdir <your_name>         # or other organization system that is used in the project space
 
 # Create project folder
 cd <your_name>
@@ -46,7 +46,7 @@ vi sub_jobs.sh
 
 # Use keypad to move cursor down to output line
 # Click 'i' to enter insert mode
-# Swap 'allison' for 'your_name'
+# Swap 'dbenkes' for 'entericsepi' (or other project space folder) and 'allison' for 'your_name'
 # Click 'ESC'
 # Click ':wq' for write (save) and quit
 
@@ -56,6 +56,28 @@ vi sub_jobs.sh
 
 5. Create personal R library and install required packages
 
+```bash
+   # Create a directory for R libraries
+   mkdir ~/Rlibs
+
+   # Start an interactive session (do not do this on the login node)
+   srun --pty --partition=interactive-cpu --nodes=1 --ntasks-per-node=1 --mem-per-cpu=8G --time=02:00:00 bash
+
+   # Open R console
+   R
+
+   # Set library path and install packages
+   .libPaths("~/Rlibs")
+
+   # Install drotr package from GitHub
+   devtools::install_github("allicodi/drotr")
+
+   # Install other packages from CRAN
+   install.packages(c("here"))
+
+   ```
+
 ## Running the analysis
 
+TODO 
 1. ./run_simulation.sh arg1 arg2 arg3
