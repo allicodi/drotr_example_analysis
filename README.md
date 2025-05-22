@@ -3,7 +3,7 @@
 
 This is an example of how to use RSPH HPC for basic data analysis. Requires working knowledge of RSPH HPC, as covered in the RSPH HPC Cheat Sheet. 
 
-### Initial setup
+## Initial setup
 
 Follow these steps to set up your environment on RSPH HPC
 
