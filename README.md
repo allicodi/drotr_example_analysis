@@ -1,7 +1,7 @@
 # RSPH HPC Analysis Example
 ## OTR Project
 
-This is an example of how to use RSPH HPC for basic data analysis. Requires working knowledge of RSPH HPC coverered in RSPH HPC Cheat Sheet. 
+This is an example of how to use RSPH HPC for basic data analysis. Requires working knowledge of RSPH HPC, as covered in the RSPH HPC Cheat Sheet. 
 
 ### Initial setup
 
@@ -9,7 +9,7 @@ Follow these steps to set up your environment on RSPH HPC
 
 1. **Log into RSPH HPC**
 
-See RSPH HPC Cheat sheet for instructions
+See RSPH HPC Cheat Sheet for instructions.
 
 2. **Clone repository into home directory**
 
@@ -46,7 +46,7 @@ vi sub_jobs.sh
 
 # Use keypad to move cursor down to output line
 # Click 'i' to enter insert mode
-# Swap 'dbenkes' for 'entericsepi' (or other project space folder) and 'allison' for 'your_name'
+# Swap 'dbenkes' for 'entericsepi' (or other project space folder) and 'allison' for '<your_name>'
 # Click 'ESC'
 # Click ':wq' for write (save) and quit
 
@@ -54,7 +54,7 @@ vi sub_jobs.sh
 
 - Repeat for paths on lines 77, 80, 107, and 110 of `run_analysis.R`
 
-5. Create personal R library and install required packages
+5. Create personal R library directory and install the required packages
 
 ```bash
    # Create a directory for R libraries
