@@ -104,4 +104,4 @@ You can check on the progress of your jobs using `squeue -u <user_id>`. You will
         28705647_3    empire    drotr    acodi  R       0:02      1 node52
 ```
 
-2. When your job finishes running, results will be saved in the `results` folder you made within the project space. You can transfer them to your local machine using SCP/SFTP, or begin an interactive R session to view them interactively.
+2. When your job finishes running, results will be saved in the `drotr_example_analysis/results` folder you made within the project space. You can transfer them to your local machine using SCP/SFTP, or begin an interactive R session to view them interactively.
